@@ -11,6 +11,7 @@ import genericlibraries.IconstantPath;
 public class CreateContactTest extends BaseClass{
 	@Test
 	public void createcontactTest()
+	//create the contact for git hub
 	{
 		SoftAssert soft=new SoftAssert();
 		home.clickContacts();
