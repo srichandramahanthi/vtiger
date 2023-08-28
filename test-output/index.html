@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\user\AppData\Local\Temp\testng-eclipse--1222221326\testng-customsuite.xml</span>
+                    <span>C:\Users\user\AppData\Local\Temp\testng-eclipse--805800921\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="vtigerFinalScripts.CreateContactWithOrgTest" class="method navigator-link" hash-for-method="createContactWithOrg">createContactWithOrg</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="vtigerFinalScripts.CreateNewEventTest" class="method navigator-link" hash-for-method="createEventTest">createEventTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,23 +121,23 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">vtigerFinalScripts.CreateContactWithOrgTest</span>
+              <span class="class-name">vtigerFinalScripts.CreateNewEventTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createContactWithOrg">
-                  </a> <!-- createContactWithOrg -->
-                  <span class="method-name">createContactWithOrg</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@alt=&apos;Create Contact...&apos;]&quot;}
-  (Session info: chrome=116.0.5845.97)
+                  <a name="createEventTest">
+                  </a> <!-- createEventTest -->
+                  <span class="method-name">createEventTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#iscal_trigger_date_start&quot;}
+  (Session info: chrome=116.0.5845.111)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d06c575422a5105c6710f0caf2568e9, findElement {using=xpath, value=//img[@alt=&apos;Create Contact...&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.97, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57016}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57016/devtoo..., se:cdpVersion: 116.0.5845.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d06c575422a5105c6710f0caf2568e9
+Command: [c07be7ce53df8ffdd51a7760fbe81043, findElement {using=id, value=iscal_trigger_date_start}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64033}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64033/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c07be7ce53df8ffdd51a7760fbe81043
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -155,8 +155,8 @@ Session ID: 7d06c575422a5105c6710f0caf2568e9
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at pomPages.ContactsPage.clickPlusButton(ContactsPage.java:20)
-	at vtigerFinalScripts.CreateContactWithOrgTest.createContactWithOrg(CreateContactWithOrgTest.java:18)
+	at pomPages.CreateNewEventPage.clickOnstartDate(CreateNewEventPage.java:40)
+	at vtigerFinalScripts.CreateNewEventTest.createEventTest(CreateNewEventTest.java:21)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -192,7 +192,7 @@ Session ID: 7d06c575422a5105c6710f0caf2568e9
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user\AppData\Local\Temp\testng-eclipse--1222221326\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\user\AppData\Local\Temp\testng-eclipse--805800921\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -201,7 +201,7 @@ Session ID: 7d06c575422a5105c6710f0caf2568e9
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;vtigerFinalScripts.CreateContactWithOrgTest&quot;/&gt;
+      &lt;class name=&quot;vtigerFinalScripts.CreateNewEventTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -243,14 +243,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createContactWithOrg')
-data.setCell(0, 2, 'vtigerFinalScripts.CreateContactWithOrgTest')
-data.setCell(0, 3, 14502);
+data.setCell(0, 1, 'createEventTest')
+data.setCell(0, 2, 'vtigerFinalScripts.CreateNewEventTest')
+data.setCell(0, 3, 18533);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -276,28 +276,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">vtigerFinalScripts.CreateContactWithOrgTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">vtigerFinalScripts.CreateNewEventTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">classSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">methodSetup</span>
-                <span class="method-start">3254 ms</span>
+                <span class="method-start">4438 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">createContactWithOrg</span>
-                <span class="method-start">8277 ms</span>
+                <span class="method-name">createEventTest</span>
+                <span class="method-start">10676 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">methodTearDown</span>
-                <span class="method-start">22803 ms</span>
+                <span class="method-start">29263 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">classTearDown</span>
-                <span class="method-start">24856 ms</span>
+                <span class="method-start">31366 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

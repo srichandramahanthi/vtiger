@@ -9,19 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,272</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,823</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">vtigerFinalScripts.CreateContactWithOrgTest</td><td><a href="#m0">createContactWithOrg</a></td><td rowspan="1">1692858326501</td><td rowspan="1">14502</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">vtigerFinalScripts.CreateNewEventTest</td><td><a href="#m0">createEventTest</a></td><td rowspan="1">1693028131893</td><td rowspan="1">18533</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">vtigerFinalScripts.CreateContactWithOrgTest#createContactWithOrg</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@alt=&apos;Create Contact...&apos;]&quot;}
-  (Session info: chrome=116.0.5845.97)
+<h2>Default test</h2><h3 id="m0">vtigerFinalScripts.CreateNewEventTest#createEventTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#iscal_trigger_date_start&quot;}
+  (Session info: chrome=116.0.5845.111)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d06c575422a5105c6710f0caf2568e9, findElement {using=xpath, value=//img[@alt=&apos;Create Contact...&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.97, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57016}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57016/devtoo..., se:cdpVersion: 116.0.5845.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d06c575422a5105c6710f0caf2568e9
+Command: [c07be7ce53df8ffdd51a7760fbe81043, findElement {using=id, value=iscal_trigger_date_start}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64033}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64033/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c07be7ce53df8ffdd51a7760fbe81043
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -39,8 +39,8 @@ Session ID: 7d06c575422a5105c6710f0caf2568e9
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at pomPages.ContactsPage.clickPlusButton(ContactsPage.java:20)
-	at vtigerFinalScripts.CreateContactWithOrgTest.createContactWithOrg(CreateContactWithOrgTest.java:18)
+	at pomPages.CreateNewEventPage.clickOnstartDate(CreateNewEventPage.java:40)
+	at vtigerFinalScripts.CreateNewEventTest.createEventTest(CreateNewEventTest.java:21)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

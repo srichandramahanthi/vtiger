@@ -22,6 +22,24 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class ExcelUtility {
 	private Workbook workbook;
 	private DataFormatter df;
+	public void writeToExcel(String sheetName,int RowNum,int cellNum,String value,String excelPath)
+	{
+		Sheet sheet=workbook.getSheet(sheetName);
+		sheet.getRow(RowNum).createCell(cellNum).setCellValue(value);
+		FileOutputStream fos=null;
+		try {
+			fos = new FileOutputStream(excelPath);
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+		try {
+			workbook.write(fos);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}	
+	}
 	/**
 	 * This method is used to initialize excel
 	 * @param excelpath

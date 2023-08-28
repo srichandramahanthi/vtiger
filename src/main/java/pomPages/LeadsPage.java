@@ -18,8 +18,10 @@ public class LeadsPage {
 	    private List<WebElement> leadsList;
 		@FindBy(xpath="//img[@alt='Create Lead...']")
 		private WebElement plusButton;
-		@FindBy(xpath="//input[@value=\"Delete\"]")
+		@FindBy(xpath="//input[@value='Delete']")
 		private WebElement DeleteButton;
+		@FindBy(xpath="//table[@class='lvt small']/descendant::tr[3]/td[3]/a")
+		private List<WebElement> leadNames;
 		//Initialization
 		public LeadsPage(WebDriver driver)
 		{
@@ -46,6 +48,10 @@ public class LeadsPage {
 		public void clickDelete()
 		{
 			DeleteButton.click();
+		}
+		public List<WebElement> getLeadNamesList() {
+			// TODO Auto-generated method stub
+			return leadNames;
 		}
 
 }
