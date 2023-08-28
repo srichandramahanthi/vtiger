@@ -7,7 +7,7 @@ import org.testng.asserts.SoftAssert;
 
 import genericlibraries.BaseClass;
 import genericlibraries.IconstantPath;
-
+//updated version
 public class CreateContactTest extends BaseClass{
 	@Test
 	public void createcontactTest()
