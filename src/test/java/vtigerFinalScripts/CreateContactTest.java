@@ -11,8 +11,10 @@ import genericlibraries.IconstantPath;
 public class CreateContactTest extends BaseClass{
 	@Test
 	public void createcontactTest()
+	//this is create contact
 	{
 		SoftAssert soft=new SoftAssert();
+		//update contact
 		home.clickContacts();
 		soft.assertTrue(driver.getTitle().contains("Contacts"));
 		contacts.clickPlusButton();
