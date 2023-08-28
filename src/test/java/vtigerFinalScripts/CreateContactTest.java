@@ -11,11 +11,8 @@ import genericlibraries.IconstantPath;
 public class CreateContactTest extends BaseClass{
 	@Test
 	public void createcontactTest()
-<<<<<<< HEAD
 	//this is create contact
-=======
 	//create the contact for git hub
->>>>>>> branch 'master' of https://github.com/srichandramahanthi/vtiger.git
 	{
 		SoftAssert soft=new SoftAssert();
 		//update contact
