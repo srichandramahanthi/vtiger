@@ -1,7 +1,7 @@
 package vtigerFinalScripts;
 
 import java.util.Map;
-
+//contains of create contact
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
