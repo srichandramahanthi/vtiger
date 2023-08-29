@@ -1,5 +1,5 @@
 package genericlibraries;
-//contains all details done
+//contains all details done in class
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
